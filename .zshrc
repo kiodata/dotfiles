@@ -33,6 +33,10 @@ if [ -d "$HOME/perlbrew" ]; then
     perlbrew use perl-5.22.1
 fi
 
+# support node.js via nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
 # zsh:history
 setopt append_history
 setopt share_history
