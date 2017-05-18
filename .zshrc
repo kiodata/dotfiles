@@ -65,7 +65,7 @@ bindkey "^R" history-incremental-pattern-search-backward
 # zsh:customize oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$HOME/.zsh_custom"
-export ZSH_THEME="jaischeema"
+export ZSH_THEME="randir"
 
 # zsh:no oh-my-zsh. autoupdates
 DISABLE_AUTO_UPDATE="true"
