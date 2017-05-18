@@ -60,12 +60,12 @@ bindkey -v
 # zsh:search shortcut
 bindkey "^R" history-incremental-pattern-search-backward
 
-# essembeh  jnrowe jaischeema afowler
+# jaischeema afowler
 
 # zsh:customize oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$HOME/.zsh_custom"
-export ZSH_THEME="randir"
+export ZSH_THEME="jaischeema"
 
 # zsh:no oh-my-zsh. autoupdates
 DISABLE_AUTO_UPDATE="true"
