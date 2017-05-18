@@ -27,10 +27,11 @@ if [[ -n "$SSH_TTY" && -S "$SSH_AUTH_SOCK" && ! -h "$SSH_AUTH_SOCK" ]]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
-# set up perlbrew
-if [ -d "$HOME/perlbrew" ]; then
-    source $HOME/perlbrew/etc/bashrc
-    perlbrew use perl-5.22.1
+# support perl via perlbrew
+export PERLBREW_ROOT="$HOME/perlbrew"
+if [ -d "$PERLBREW_ROOT" ]; then
+    source "$PERLBREW_ROOT/etc/bashrc"
+    perlbrew use perl-blead
 fi
 
 # support node.js via nvm
