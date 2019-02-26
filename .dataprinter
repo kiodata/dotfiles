@@ -1,0 +1,14 @@
+{
+#    return_value => 'pass',
+    use_prototypes  => 0,
+    colored         => 1,
+    show_readonly   => 1,
+    end_separator   => 1,
+    class           => {
+        internals   => 1,
+        parents     => 0,
+        linear_isa  => 0,
+        show_methods=> 0,
+        expand      => 1,
+    },
+}
