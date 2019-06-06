@@ -21,6 +21,7 @@ alias gv='egrep -d skip -Iv --'
 alias wcl='wc -l'
 alias perl-bisect-make='git clean -dxf && ./Configure -de -Dusedevel && make -j5'
 alias gti='git' # too common typo
+alias vi='vim'
 
 # fix ssh forwarding for tmux
 if [[ -n "$SSH_TTY" && -S "$SSH_AUTH_SOCK" && ! -h "$SSH_AUTH_SOCK" ]]; then
