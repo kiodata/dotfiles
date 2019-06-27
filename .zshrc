@@ -6,7 +6,7 @@ export LESS='-R'
 export LANG='en_US.UTF-8'
 export CLICOLOR=1
 export CLICOLOR_FORCE=1
-export PATH=$PATH:/opt/local/bin
+export PATH=/opt/local/bin:/usr/texbin:$PATH
 
 # force homebrew to rebuild everything
 export HOMEBREW_BUILD_FROM_SOURCE=1
