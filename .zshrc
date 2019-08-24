@@ -49,8 +49,16 @@ DISABLE_AUTO_UPDATE="true"
 # zsh:faster work with repositories
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+if [ ! -d "$ZSH" ]; then
+    git clone https://github.com/robbyrussell/oh-my-zsh "$ZSH"
+fi
+
+if [ ! -d "$ZSH/plugin/zsh-completions" ]; then
+    git clone https://github.com/zsh-users/zsh-completions "$ZSH/plugin/zsh-completions"
+fi
+
 # oh-my-zsh
-plugins=(git debian svn tmux safe-paste nmap)
+plugins=(git debian svn tmux safe-paste nmap zsh-completions)
 source $ZSH/oh-my-zsh.sh
 
 # zsh:history
