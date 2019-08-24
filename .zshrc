@@ -42,13 +42,33 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
+# jaischeema afowler
+
+# zsh:customize oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_CUSTOM="$HOME/.zsh_custom"
+export ZSH_THEME="randir"
+
+# zsh:no oh-my-zsh. autoupdates
+DISABLE_AUTO_UPDATE="true"
+
+# zsh:faster work with repositories
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# oh-my-zsh
+plugins=(git debian svn tmux safe-paste nmap)
+source $ZSH/oh-my-zsh.sh
+
 # zsh:history
 setopt append_history
-setopt share_history
+unsetopt inc_append_history
+unsetopt share_history
 setopt extended_history
-setopt histignoredups
-setopt histignorespace
-setopt histfindnodups
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt hist_find_no_dups
+setopt hist_fcntl_lock
+setopt hist_verify
 
 export HISTSIZE=2000000
 export SAVEHIST=$HISTSIZE
@@ -68,21 +88,3 @@ bindkey -v
 
 # zsh:search shortcut
 bindkey "^R" history-incremental-pattern-search-backward
-
-# jaischeema afowler
-
-# zsh:customize oh-my-zsh
-export ZSH="$HOME/.oh-my-zsh"
-export ZSH_CUSTOM="$HOME/.zsh_custom"
-export ZSH_THEME="randir"
-
-# zsh:no oh-my-zsh. autoupdates
-DISABLE_AUTO_UPDATE="true"
-
-# zsh:faster work with repositories
-DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# oh-my-zsh plugins
-plugins=(git debian svn tmux safe-paste nmap history history-substring-search)
-
-source $ZSH/oh-my-zsh.sh
