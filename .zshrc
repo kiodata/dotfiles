@@ -8,12 +8,6 @@ export CLICOLOR=1
 export CLICOLOR_FORCE=1
 export PATH=/opt/local/bin:/usr/texbin:$PATH
 
-# force homebrew to rebuild everything
-export HOMEBREW_BUILD_FROM_SOURCE=1
-# disable homebrew tracking bullshit
-export HOMEBREW_NO_ANALYTICS=1
-export HOMEBREW_NO_AUTO_UPDATE=1
-
 # alias block
 alias ll='ls -al'
 alias lh='ls -alh'
