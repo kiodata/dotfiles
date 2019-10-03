@@ -89,7 +89,7 @@ zle_highlight+=(paste:none)
 autoload -U compinit && compinit
 
 # zsh:vi mode
-bindkey -v
+# bindkey -v # messes up with ctrl-a
 
 # zsh:search shortcut
 bindkey "^R" history-incremental-pattern-search-backward
