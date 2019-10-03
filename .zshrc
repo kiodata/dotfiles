@@ -46,6 +46,9 @@ export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$HOME/.zsh_custom"
 export ZSH_THEME="randir"
 
+# do not complain under sudo
+ZSH_DISABLE_COMPFIX=true
+
 # zsh:no oh-my-zsh. autoupdates
 DISABLE_AUTO_UPDATE="true"
 
