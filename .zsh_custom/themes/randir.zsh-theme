@@ -1,7 +1,6 @@
-if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="magenta"; fi
-if [ ! -z "$SSH_CLIENT" ]; then PROMPT_HOST="%m"; else PROMPT_HOST="localhost"; fi
+if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="white"; fi
 
-PROMPT='%{$fg[$NCOLOR]%}%B$PROMPT_HOST%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%(!.λ.λ) '
+PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg_no_bold[yellow]%}%B"
