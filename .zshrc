@@ -53,8 +53,8 @@ if [ ! -d "$ZSH" ]; then
     git clone https://github.com/robbyrussell/oh-my-zsh "$ZSH"
 fi
 
-if [ ! -d "$ZSH/plugin/zsh-completions" ]; then
-    git clone https://github.com/zsh-users/zsh-completions "$ZSH/plugin/zsh-completions"
+if [ ! -d "$ZSH/plugins/zsh-completions" ]; then
+    git clone https://github.com/zsh-users/zsh-completions "$ZSH/plugins/zsh-completions"
 fi
 
 # oh-my-zsh
