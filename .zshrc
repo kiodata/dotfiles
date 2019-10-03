@@ -19,6 +19,9 @@ alias gti='git' # too common typo
 alias vi='vim'
 alias lxc-ls='lxc-ls -f'
 
+# do not stop terminal on ctrl+s
+stty -ixon
+
 # fix ssh forwarding for tmux
 if [[ -n "$SSH_TTY" && -S "$SSH_AUTH_SOCK" && ! -h "$SSH_AUTH_SOCK" ]]; then
     ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
